@@ -19,7 +19,8 @@ if __name__ == "__main__":
 
 	soup = BeautifulSoup(HTMLPage, 'html5lib')
 	table = soup.findChildren('table')
-	myTable = table[0]
+	print(len(table))
+	myTable = table[len(table)-1]
 
 	rows = myTable.findChildren(['th', 'tr'])
 	for row in rows:
