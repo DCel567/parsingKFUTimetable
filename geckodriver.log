@@ -1,0 +1,48 @@
+1617706079748	geckodriver	INFO	Listening on 127.0.0.1:1973
+1617706082777	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofilev1ysTf"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1617706087627	Marionette	INFO	Listening on port 1981
+1617706088015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://kpfu.ru/studentu/ucheba/raspisanie, line 934: TypeError: c is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://kpfu.ru"
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1617706123382	Marionette	INFO	Stopped listening on port 1981
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1617706412341	geckodriver	INFO	Listening on 127.0.0.1:2101
+1617706415368	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileJQ3Eli"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1617706420057	Marionette	INFO	Listening on port 2109
+1617706420125	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://kpfu.ru/studentu/ucheba/raspisanie, line 934: TypeError: c is null
+1617706441560	Marionette	INFO	Stopped listening on port 2109
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1617706497971	geckodriver	INFO	Listening on 127.0.0.1:2242
+1617706500995	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileIbCbWa"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1617706505842	Marionette	INFO	Listening on port 2250
+1617706506255	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://kpfu.ru/studentu/ucheba/raspisanie, line 934: TypeError: c is null
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+[Child 17240, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+1617706553678	Marionette	INFO	Stopped listening on port 2250
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
