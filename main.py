@@ -4,6 +4,19 @@ from bs4 import BeautifulSoup
 import time
 
 
+def find_timetable_by_day(day, lines) -> list:
+	timetable = []
+	for row in lines:
+		cellNumber = 0
+		cells = row.findChildren('td')
+		for cell in cells:
+			value = cell.text
+			if (cellNumber == day):
+				timetable.append(value)
+			cellNumber += 1
+	return timetable
+
+
 if __name__ == "__main__":
 	driver = selenium.webdriver.Firefox()
 	driver.get("https://kpfu.ru/studentu/ucheba/raspisanie")
@@ -19,15 +32,16 @@ if __name__ == "__main__":
 
 	soup = BeautifulSoup(HTMLPage, 'html5lib')
 	table = soup.findChildren('table')
-	print(len(table))
-	myTable = table[len(table)-1]
+	#  print(len(table))
+	try:
+		myTable = table[len(table)-1]
+		rows = myTable.findChildren(['th', 'tr'])
 
-	rows = myTable.findChildren(['th', 'tr'])
-	for row in rows:
-		cells = row.findChildren('td')
-		for cell in cells:
-			value = cell.text
-			print(value)
-			print()
+		#  enter day you want to look at
+		timetable = find_timetable_by_day(2, rows)
 
-
+		times = ['    ', '8:30-10:00', '10:10-11:40', '11:50-13:20', '14:00-15:30', '15:40-17:10', '17:50-19:20']
+		for i in range(7):
+			print(times[i], ' ', timetable[i])
+	except IndexError:
+		print("Something wrong with tables on the html page, please try again")
